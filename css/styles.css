@@ -1,0 +1,293 @@
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Mukta:200,400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefefe;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 200;
+}
+
+main {
+  background-color: #fefefe;
+  margin-top: 0rem;
+  padding: 1rem 15%;
+  box-sizing: border-box;
+  padding-bottom: 5rem;
+}
+
+main.login {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Mukta';
+  font-weight: 700;
+  font-size: 3rem;
+  color: #111;
+}
+
+.page-h1, form.admin h2 {
+  position: relative;
+  right: 2rem;
+}
+
+.login h3 {
+
+  font-size: 1.5rem;
+  color: #636765;
+  position: relative;
+  bottom: 1.2rem;
+}
+
+form.login {
+  display: block;
+  margin: auto;
+  width: 75%;
+}
+
+.login input:not([type="submit"]) {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.login label {
+  font-size: 1.1rem;
+
+  color: #636765;
+}
+
+.login input[type="submit"] {
+  padding: 12px 60px 12px 60px;
+  background-color: #F2545B;
+  color: #fefefe;
+  border: none;
+  border-radius: 40px;
+
+  letter-spacing: .3em;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:active {
+  background-color: #d7464c;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F2545B;
+  min-width: 575px;
+}
+
+nav li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  background-color: #d7464c;
+  text-decoration: none;
+}
+
+nav ul li#logout {
+  float: right;
+  text-align: right;
+}
+
+form.admin {
+  width: 75%;
+  margin-top: 4rem;
+}
+
+form.admin input:not([type="submit"]) {
+  width: 75%;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  padding: 5px;
+  min-width: 300px;
+}
+
+form.admin input[type="submit"],
+form.comment input[type="submit"] {
+  padding: 12px 40px 12px 40px;
+  background-color: #F2545B;
+  color: #fefefe;
+  border: none;
+  border-radius: 40px;
+  letter-spacing: .3em;
+  cursor: pointer;
+}
+
+form.admin input[type="submit"]:active,
+.delete form input[type="submit"]:active,
+form.comment input[type="submit"]:active {
+  background-color: #d7464c;
+}
+
+form.admin textarea,
+form.comment textarea {
+  margin-bottom: 25px;
+  margin-top: 10px;
+  width: 75%;
+  border: solid 1px #dedede;
+  resize: none;
+  padding: 5px;
+  min-width: 300px;
+}
+
+.welcome {
+  font-size: 1.3rem;
+
+  position: relative;
+  bottom: .75rem;
+}
+
+.error {
+  font-style: italic;
+  color: red;
+
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 675px;
+
+}
+
+th {
+  background-color: #F2545B;
+  color: #fefefe;
+  border: solid 1px #fefefe;
+  padding: 12px;
+}
+
+th.#review {
+  width: 25%;
+}
+
+td {
+  padding: 6px 18px;
+  border: solid 1px #dedede;
+  text-align: center;
+}
+
+a {
+  color: #F2545B;
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main.delete {
+  width: 75%;
+  min-width: 600px;
+  margin: auto;
+  box-shadow: 0px 1px 10px -5px black;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0 0px 20px 0px;
+
+}
+
+body.delete {
+  background-color: #555555;
+}
+
+.delete header h1 {
+  width: 100%;
+  background-color: #F2545B;
+  color: #fefefe;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.delete form input {
+  padding: 10px;
+  margin: 10px;
+}
+
+.delete form input[type="submit"] {
+  padding: 12px 20px 12px 25px;
+  background-color: #F2545B;
+  color: #fefefe;
+  border: none;
+  border-radius: 40px;
+
+  letter-spacing: .3em;
+  cursor: pointer;
+}
+
+.delete table {
+  width: 80%;
+  margin: auto;
+}
+
+main.reviews ul {
+  list-style-type: none;
+  text-align:left;
+}
+
+main.reviews p {
+  font-size: 1.5rem;
+
+}
+
+main.reviews p a{
+
+}
+
+main.review {
+  min-width: 550px;
+  max-width: 1100px;
+}
+
+div.review {
+  padding-bottom: 2rem;
+}
+
+span.comment-author {
+  font-weight: 400;
+}
+
+div.comments p {
+  position: relative;
+  bottom: .5rem;
+  padding-bottom: 1rem;
+}
+
+form.comment label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-bottom: .5rem;
+}
+
+span.comment-date {
+  font-size: .9rem;
+}
+
+span.review-date {
+  position: relative;
+  bottom: 1rem;
+}
