@@ -15,10 +15,10 @@ After login, users are directed to the user [dashboard](admin.php).
 
 If the user is an _admin_, the dashboard will show a table populated by all reviews that are stored in the database. The table will also contain a delete row with a link to delete the corresponding review from the database. If clicked, the user will be shown a [confirmation page](delete.php) with the selected review before actually deleting it from the database.
 
-If the user is a _reviewer_, the dashboard will show a table containing only the current user's published reviews. Below the table is a form where the user may submit a new review. Once submitted, the information is stored in the database and also in [reviews.xml](reviews.xml) for RSS syndication.
- 
+
 ![New review form](img/new-tn.jpg)
 
+If the user is a _reviewer_, the dashboard will show a table containing only the current user's published reviews. Below the table is a form where the user may submit a new review. Once submitted, the information is stored in the database and also in [reviews.xml](reviews.xml) for RSS syndication.
 
 ## Reviews.php
 
