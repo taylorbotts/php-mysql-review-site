@@ -12,6 +12,9 @@
   if (empty($_POST['music_image_url'])){
     $missing_info = 1; }
 
+
+// The following class was made to show my professor I understood what a class is and how to implement it in PHP
+
   class User {
     public $name;
 
@@ -57,7 +60,7 @@
         print $mysqli->error;
       }
 
-      /* This works local but doesn't work on the server
+      /* This works locally but doesn't work on the server. This is because the UCF server did not have simplexml installed.
 
       $rss = "reviews.xml";
       $xml = simplexml_load_file($rss);
